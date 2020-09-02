@@ -32,22 +32,22 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           Positioned(
-            top: _screenHeight * 0.14,
-            child: SizedBox(
-              height: _screenHeight * 0.3,
-              child: PageView(
-                children: <Widget>[
-                  Container(
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    color: Colors.yellow,
-                  ),
-                ],
-              ),
+            height: _screenHeight * 0.14,
+            top: _screenHeight * 0.18,
+            left: 0,
+            right: 0,
+            child: PageView(
+              children: <Widget>[
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.blue,
+                ),
+                Container(
+                  color: Colors.green,
+                ),
+              ],
             ),
           ),
         ],
