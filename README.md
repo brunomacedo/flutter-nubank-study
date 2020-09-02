@@ -1,6 +1,8 @@
-# nubank
+# Nubank Flutter Studies
 
 A new Flutter project.
+
+![android emulator](images/nubank-flutter-studies.gif)
 
 ## Getting Started
 
