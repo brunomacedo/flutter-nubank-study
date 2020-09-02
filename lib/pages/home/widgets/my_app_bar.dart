@@ -21,7 +21,8 @@ class MyAppBar extends StatelessWidget {
               ), */
               Image.asset(
                 'images/logo.png',
-                height: 60,
+                color: Colors.white,
+                height: 40,
               ),
               /* SvgPicture.asset(
                 'images/logo.svg',
@@ -29,6 +30,13 @@ class MyAppBar extends StatelessWidget {
               ), */
               SizedBox(
                 width: 10,
+              ),
+              Text(
+                'Bruno',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
               ),
             ],
           ),
