@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    double _screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.purple,
       body: Stack(
@@ -24,6 +25,30 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           MyAppBar(
             showMenu: _showMenu,
+            onTap: () {
+              setState(() {
+                _showMenu = !_showMenu;
+              });
+            },
+          ),
+          Positioned(
+            top: _screenHeight * 0.14,
+            child: SizedBox(
+              height: _screenHeight * 0.3,
+              child: PageView(
+                children: <Widget>[
+                  Container(
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
