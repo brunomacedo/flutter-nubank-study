@@ -14,13 +14,14 @@ dependencies:
   flutter_native_splash: ^0.1.9
 
 flutter_native_splash:
+  android_disable_fullscreen: true
   image: images/logo.png
-  color: "8a05be"
+  color: "9c27b0"
 
 flutter_icons:
   image_path: "images/favicon.png"
-  adaptive_icon_background: "#8a05be"
-  android: "launcher_icon"
+  adaptive_icon_background: "#9c27b0"
+  android: true
   ios: true
 
 dev_dependencies:

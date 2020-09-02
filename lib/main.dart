@@ -8,15 +8,18 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Nubank Study',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        brightness: Brightness.dark,
+    return PreferredSize(
+      preferredSize: Size.fromHeight(0),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Nubank Study',
+        theme: ThemeData(
+          primarySwatch: Colors.purple,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          brightness: Brightness.dark,
+        ),
+        home: HomePage(),
       ),
-      home: HomePage(),
     );
   }
 }

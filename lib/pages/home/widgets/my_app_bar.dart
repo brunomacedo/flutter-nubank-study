@@ -10,7 +10,7 @@ class MyAppBar extends StatelessWidget {
         ),
         Container(
           color: Colors.white10,
-          height: 200,
+          height: 100,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
