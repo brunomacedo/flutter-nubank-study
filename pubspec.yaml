@@ -1,4 +1,4 @@
-name: "uolplay"
+name: "nubank"
 description: Aplicativo de filmes e vídeos do UOL.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
@@ -14,8 +14,9 @@ dependencies:
   flutter_native_splash: ^0.1.9
 
 flutter_native_splash:
-  image: images/splash3x.png
-  color: "000000"
+  image: images/logo.png
+  color: "8a05be"
+  fill: true
 
 flutter_icons:
   image_path: "images/icon.png"

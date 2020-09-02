@@ -1,6 +1,6 @@
 {
-    "name": "uolplay",
-    "short_name": "UOL Play",
+    "name": "nubank",
+    "short_name": "nubank",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

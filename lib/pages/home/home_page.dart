@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uolplay/pages/home/widgets/my_app_bar.dart';
+import 'package:nubank/pages/home/widgets/my_app_bar.dart';
 
 class HomePage extends StatelessWidget {
   @override

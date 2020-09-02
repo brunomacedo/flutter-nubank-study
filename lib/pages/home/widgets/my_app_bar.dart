@@ -15,7 +15,7 @@ class MyAppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               /* Image.network(
-                'https://logodownload.org/wp-content/uploads/2019/08/uolplay-logo.png',
+                'https://logodownload.org/wp-content/uploads/2019/08/nubank-logo.png',
                 color: Colors.white,
                 height: 40,
               ), */

@@ -1,4 +1,4 @@
-package com.example.uolplay
+package com.example.nubank
 
 import io.flutter.embedding.android.FlutterActivity
 
