@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/pages/home/widgets/my_app_bar.dart';
+import 'package:nubank/pages/home/widgets/page_view_app.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     double _screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: Colors.purple,
       body: Stack(
@@ -31,25 +33,9 @@ class _HomePageState extends State<HomePage> {
               });
             },
           ),
-          Positioned(
-            height: _screenHeight * 0.14,
-            top: _screenHeight * 0.18,
-            left: 0,
-            right: 0,
-            child: PageView(
-              children: <Widget>[
-                Container(
-                  color: Colors.yellow,
-                ),
-                Container(
-                  color: Colors.blue,
-                ),
-                Container(
-                  color: Colors.green,
-                ),
-              ],
-            ),
-          ),
+          PageViewApp(
+            top: _screenHeight * 0.20,
+          )
         ],
       ),
     );
