@@ -17,7 +17,7 @@ class MyAppBar extends StatelessWidget {
           onTap: onTap,
           child: Container(
             color: Colors.white10,
-            height: MediaQuery.of(context).size.height * 0.20,
+            height: MediaQuery.of(context).size.height * 0.18,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -45,7 +45,7 @@ class MyAppBar extends StatelessWidget {
                       'Bruno',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 18,
+                        fontSize: 22,
                       ),
                     ),
                   ],
