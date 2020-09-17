@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/core/internationalization/app_translate.dart';
 
 class MyAppBar extends StatelessWidget {
   final bool showMenu;
@@ -42,7 +43,7 @@ class MyAppBar extends StatelessWidget {
                       width: 10,
                     ),
                     Text(
-                      'Bruno',
+                      AppTranslate(context).text('btn_sign'),
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 22,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:nubank/core/internationalization/app_localizations.dart';
 import 'package:nubank/pages/spash_screen.dart';
 
 void main() {
@@ -29,6 +31,26 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
         home: SplashPage(),
+        supportedLocales: [
+          Locale('en', 'US'),
+          Locale('pt', 'BR'),
+          Locale('es', 'ES'),
+        ],
+        localizationsDelegates: [
+          AppLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
+        localeResolutionCallback: (locale, supportedLocales) {
+          for (var supportedLocale in supportedLocales) {
+            if (supportedLocale.languageCode == locale.languageCode &&
+                supportedLocale.countryCode == locale.countryCode) {
+              return supportedLocale;
+            }
+          }
+          return supportedLocales.first;
+        },
       ),
     );
   }
