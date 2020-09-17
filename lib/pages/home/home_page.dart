@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     final controller = PageController(viewportFraction: 0.9);
 
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: Colors.purple[800],
       body: Stack(
         alignment: Alignment.topCenter,
         children: <Widget>[

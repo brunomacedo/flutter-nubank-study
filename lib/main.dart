@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:nubank/pages/home/home_page.dart';
+import 'package:flutter/services.dart';
+import 'package:nubank/pages/spash_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarBrightness: Brightness.dark,
+      statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.purple[800],
+    ),
+  );
+  runApp(
+    MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +28,7 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
           brightness: Brightness.dark,
         ),
-        home: HomePage(),
+        home: SplashPage(),
       ),
     );
   }
