@@ -25,6 +25,17 @@ class _HomePageState extends State<HomePage> {
     double _screenHeight = MediaQuery.of(context).size.height;
     final controller = PageController(viewportFraction: 0.9);
 
+    final _list = [
+      {
+        'text': 'Lorem ipsum 1',
+        'items': ['a', 'b', 'c'],
+      },
+      {
+        'text': 'Lorem lorem 2',
+        'items': ['a', 'b', 'c'],
+      },
+    ];
+
     return Scaffold(
       backgroundColor: Colors.purple[800],
       body: Stack(
@@ -41,6 +52,7 @@ class _HomePageState extends State<HomePage> {
           PageViewApp(
             controller: controller,
             top: _screenHeight * 0.20,
+            list: _list,
             /* onChanged: (index) {
               setState(() {
                 _currentIndex = index;
@@ -50,6 +62,7 @@ class _HomePageState extends State<HomePage> {
           MyCustomDots(
             controller: controller,
             top: _screenHeight * 0.76,
+            counter: _list.length,
           ),
           /* MyDotsApp(
             top: _screenHeight * 0.65,
