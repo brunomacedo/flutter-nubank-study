@@ -20,6 +20,13 @@ class MyCustomDots extends StatelessWidget {
       child: SmoothPageIndicator(
         controller: controller,
         count: counter,
+        onDotClicked: (index) {
+          controller.animateToPage(
+            index,
+            duration: Duration(milliseconds: 300),
+            curve: Curves.easeOut,
+          );
+        },
         effect: WormEffect(
           spacing: 10,
           dotColor: Colors.white38,
